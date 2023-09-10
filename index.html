@@ -26,8 +26,24 @@
     </style>
 </head>
 <body>
-    <header>
-        <section class="flex flex-col md:flex-row justify-around items-center bg-[#FFFBF0] p-2.5 md:py-40"> <!---Banner Section-->
+    <header class=" bg-[#FFFBF0] ">
+         <!-------------------Navigation----------------------------->
+        <nav class="flex flex-col md:flex-row justify-between items-center p-2.5 md:py-5 md:px-20">
+            <div> <!--Logo-->
+                <img class="w-80" src="icons/logo.png" alt="Penguin Fashion">
+            </div>
+            <div> <!---Menu-->
+                <ul class="flex flex-col md:flex-row items-center justify-between mt-5 md:mt-0">
+                    <li class="text-[#3C3C3C] text-base font-medium"><a href="#">Home</a></li>
+                    <li class="text-[#3C3C3C] text-base font-medium md:ml-10"><a href="#">Product</a></li>
+                    <li class="text-[#3C3C3C] text-base font-medium md:ml-10"><a href="#">About Us</a></li>
+                    <li class="text-[#3C3C3C] text-base font-medium md:ml-10"><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <!------------------------------Banner Section-------------------------------------->
+        <section class="flex flex-col md:flex-row justify-around items-center p-2.5 md:py-40  mt-10 md:mt-0"> 
             <div class="bannet-content"> <!--banner Content-->
                 <h1 class="Bebas-Neue text-5xl md:text-7xl font-normal uppercase text-[#363958] mb-5"><span class="text-[#FABE4C]">BE The Penguins <br></span>of Winter</h1>
                 <p class="Roboto text-lg font-normal mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quisquam.</p>
@@ -39,7 +55,7 @@
         </section>
     </header>
     <main>
-        <!---Woman Jackets Section-->
+        <!-----------------------------------Woman Jackets Section----------------------------->
         <section class="max-w-5xl mx-2.5 md:mx-auto mt-20">
             <h3 class="Bebas-Neue text-4xl md:text-7xl font-normal text-center md:text-left uppercase text-[#363958] mb-10">WoMan Jacket</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-5">  <!---Product Card-->
@@ -90,8 +106,7 @@
                 </div>
             </div>
         </section>
-
-        <!---Man Jackets Section-->
+        <!----------------------------------Man Jackets Section------------------------------->
         <section class="max-w-5xl mx-2.5 md:mx-auto mt-20">
             <h3 class="Bebas-Neue text-4xl md:text-7xl font-normal text-center md:text-left uppercase text-[#363958] mb-10">Man Jacket</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-5">  <!---Product Card-->
@@ -143,8 +158,56 @@
                 
             </div>
         </section>
+
+        <!--------------------------------Company Policiy------------------------------------>
+        <section class="max-w-5xl flex flex-col-reverse md:flex-row items-center justify-around gap-20 mx-2.5 md:mx-auto mt-20 md:py-40">
+             <!---------------------Policy Contents-------------------------->
+            <div class="md:w-5/12">
+                 <!----------Policy Box-1--------------->
+                <div class="flex flex-col md:flex-row items-center gap-5 bg-white drop-shadow-xl rounded-xl p-5 mb-4">
+                    <div> <!--Policy Image-->
+                        <img class="w-16 md:w-20" src="icons/house.png" alt="">
+                    </div>
+                    <div> <!--Policy Box Contents-->
+                        <h4 class="Roboto text-2xl text-[#363958] font-bold text-center md:text-left">Find the Perfect Fit</h4>
+                        <p class="Roboto  text-base font-normal text-[#3E3E3E] text-center md:text-left">
+                            Everybody is different, which is why we offer styles for every body.
+                        </p>
+                    </div>
+                </div>
+                 <!---------Policy Box-2---------->
+                <div class="flex flex-col md:flex-row items-center gap-5 bg-white drop-shadow-xl rounded-xl p-5 mb-4">
+                    <div> <!--Policy Image-->
+                        <img class="w-16 md:w-20" src="icons/box.png" alt="">
+                    </div>
+                    <div> <!--Policy Box Contents-->
+                        <h4 class="Roboto text-2xl text-[#363958] font-bold text-center md:text-left">Free Exchanges</h4>
+                        <p class="Roboto  text-base font-normal text-[#3E3E3E] text-center md:text-left">
+                            One of the many reasons you can shop with peace of mind.
+                        </p>
+                    </div>
+                </div>
+                 <!-----------Policy Box-3------------------->
+                <div class="flex flex-col md:flex-row items-center gap-5 bg-white drop-shadow-xl rounded-xl p-5">
+                    <div> <!--Policy Image-->
+                        <img class="w-16 md:w-20" src="icons/question.png" alt="">
+                    </div>
+                    <div> <!--Policy Box Contents-->
+                        <h4 class="Roboto text-2xl text-[#363958] font-bold text-center md:text-left">Contact Our Seller</h4>
+                        <p class="Roboto  text-base font-normal text-[#3E3E3E] text-center md:text-left">
+                            They are here to help you. That's quite literally what we pay them for.
+                        </p>
+                    </div>
+                </div>
+            </div>
+             <!--------------------------------Policy Imges------------------------------------>
+            <div class="md:w-7/12">
+                <img src="images/shopping.png" alt="">
+            </div>
+        </section>
     </main>
-    <footer></footer>
-    
+    <footer class="bg-[#FFF4E7] max-w-5xl rounded-lg mt-10 mb-2.5 md:my-10 mx-auto p-2.5">
+        <p class="Roboto text-base text-[#3C3C3C] text-center font-medium">Designed By: Abdullah Al Jubair</p>
+    </footer>
 </body>
 </html>
